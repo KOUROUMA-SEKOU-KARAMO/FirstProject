@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: darkblue;
+
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+header nav ul{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+
+
+header nav ul li{
+    list-style-type: none;
+    padding: 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+
+nav ul li a:hover{
+      text-decoration: underline;
+    color: #b3aeae;
+
+}
+
+.header-logo{
+    background-image: url('./images/198732725-fond-de-pâques-avec-des-oeufs-et-des-confettis-de-couleur-pastel-rendu-3d.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100px;
+    height: 100px;
+    /* position: absolute; */
+    border-radius: 50% ;
+
+}
