@@ -6,7 +6,7 @@ body{
 
 header{
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     background-color: darkblue;
 
 }
@@ -18,7 +18,7 @@ header nav{
     align-items: center;
  
 }
-header nav ul{
+header nav  .nav-link{
     display: flex;
     justify-content:flex-end;
     align-items: center;
@@ -45,15 +45,69 @@ nav ul li a:hover{
 
 }
 
+header .fa-bars{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    z-index: 50;
+    display: none;
+}
+
 .header-logo{
-    background-image: url('./images/198732725-fond-de-pâques-avec-des-oeufs-et-des-confettis-de-couleur-pastel-rendu-3d.webp');
-    background-size: cover;
+    position: relative;
+    /* position: relative;
+    background-image: url('./images/198732725-fond-de-pâques-avec-des-oeufs-et-des-confettis-de-couleur-pastel-rendu-3d.webp'); */
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    /* width: 60px;
+    height: 60px;
+    border-radius: 50% ;*/
+    left : 20px; 
 
-    width: 100px;
-    height: 100px;
-    /* position: absolute; */
-    border-radius: 50% ;
+}
 
+.header-logo img{
+     position: relative;
+     width: 60px;
+     height: 60px;
+     object-position:bottom left;
+     border-radius: 50%;
+     filter: drop-shadow(0 0 5px white)
+}
+
+.decallerImg{
+     position: relative;
+    left : 70%;
+
+}
+
+
+
+.show-nav-link{
+    display: inline-block;
+    position: absolute;
+    background-color: darkblue;
+    top: 1px;
+    margin: 0 0 0 0 ;
+    height: 100vh;
+    padding: 0;
+    width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    nav  ul .nav-link{
+        display: none;
+    }
+    header .fa-bars{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        left : 92%;
+        z-index: 30 ;
+    }
+    header .fa-bars:hover{
+       color: #d6d1d1;
+    }
 }
